@@ -10,7 +10,7 @@ import { ResultCard } from './components/ResultCard';
 import { TeacherDashboard } from './components/TeacherDashboard';
 import { TeacherLoginModal } from './components/TeacherLoginModal';
 
-const STORAGE_KEY = 'arrohmah_cbt_submissions_v1';
+const STORAGE_KEY = 'arrohmah_cbt_submissions_v2';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<

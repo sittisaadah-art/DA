@@ -15,15 +15,19 @@ export const EXAM_METADATA = {
 export const MULTIPLE_CHOICE_QUESTIONS: MultipleChoiceQuestion[] = [
   {
     id: 1,
-    question: 'Sebuah fungsi dalam kalkulator didefinisikan sebagai f(x) = 2x. Jika inputnya x = 7, output dari fungsi tersebut adalah ....',
+    question: 'Berikut adalah definisi fungsi ....',
     options: [
-      { key: 'A', text: '28' },
-      { key: 'B', text: '7' },
-      { key: 'C', text: '21' },
-      { key: 'D', text: '14' },
+      {
+        key: 'A',
+        text: 'Komponen yang berkaitan dan saling terkait secara berurutan yang merupakan input, proses, dan output',
+      },
+      { key: 'B', text: 'Sebuah proses pada komputer' },
+      { key: 'C', text: 'Menjalankan sistem komputer dengan biner' },
+      { key: 'D', text: 'Output pada komputer yang terlihat pada layar monitor' },
     ],
-    correctAnswer: 'D',
-    explanation: 'Fungsi f(x) = 2x mengalikan input dengan 2. Jika x = 7, maka f(7) = 2 × 7 = 14.',
+    correctAnswer: 'A',
+    explanation:
+      'Fungsi adalah komponen atau relasi yang berkaitan dan saling terkait secara berurutan yang memproses masukan (input) melalui suatu aturan/proses untuk menghasilkan keluaran (output).',
   },
   {
     id: 2,
@@ -208,7 +212,7 @@ export const INITIAL_SUBMISSIONS: StudentSubmission[] = [
     submittedAt: '2026-10-26 10:45:12',
     durationSeconds: 1058, // 17m 38s
     mcAnswers: {
-      1: 'D',
+      1: 'A',
       2: 'C',
       3: 'A',
       4: 'B',
@@ -297,7 +301,7 @@ export const INITIAL_SUBMISSIONS: StudentSubmission[] = [
     submittedAt: '2026-10-26 11:02:18',
     durationSeconds: 1420,
     mcAnswers: {
-      1: 'D',
+      1: 'A',
       2: 'C',
       3: 'A',
       4: 'B',
@@ -375,7 +379,7 @@ export const INITIAL_SUBMISSIONS: StudentSubmission[] = [
     submittedAt: '2026-10-26 11:15:40',
     durationSeconds: 1540,
     mcAnswers: {
-      1: 'D',
+      1: 'A',
       2: 'C',
       3: 'A',
       4: 'B',
