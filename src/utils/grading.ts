@@ -46,31 +46,28 @@ export function evaluateEssayAnswers(answers: Record<number, string>): {
     let feedback = '';
 
     if (q.id === 1) {
-      // Q1: Konversi tabel
+      // Q1: Konversi tabel (3 baris)
       // 15 -> 1111, F
       // 35 -> 100011
       // 4D -> 77, 1001101
-      // 11010 -> 26, 1a
       let partsCorrect = 0;
       if (cleanAnswer.includes('1111')) { partsCorrect++; matchedKeywords.push('1111 (Biner 15)'); }
       if (cleanAnswer.includes('f') || cleanAnswer.includes('0xf')) { partsCorrect++; matchedKeywords.push('F (Heksa 15)'); }
       if (cleanAnswer.includes('100011')) { partsCorrect++; matchedKeywords.push('100011 (Biner 35)'); }
       if (cleanAnswer.includes('77')) { partsCorrect++; matchedKeywords.push('77 (Desimal 4D)'); }
       if (cleanAnswer.includes('1001101')) { partsCorrect++; matchedKeywords.push('1001101 (Biner 4D)'); }
-      if (cleanAnswer.includes('26')) { partsCorrect++; matchedKeywords.push('26 (Desimal 11010)'); }
-      if (cleanAnswer.includes('1a')) { partsCorrect++; matchedKeywords.push('1A (Heksa 11010)'); }
 
-      if (partsCorrect >= 6) {
+      if (partsCorrect >= 5) {
         score = 20;
         feedback = 'Sempurna! Semua konversi bilangan desimal, biner, dan heksadesimal terjawab dengan tepat.';
-      } else if (partsCorrect >= 4) {
+      } else if (partsCorrect >= 3) {
         score = 16;
         feedback = 'Sangat baik. Sebagian besar nilai konversi telah terisi dengan benar.';
       } else if (partsCorrect >= 2) {
-        score = 10;
+        score = 12;
         feedback = 'Cukup. Beberapa konversi sudah tepat, periksa kembali perhitungan konversi heksadesimal dan biner.';
       } else {
-        score = 5;
+        score = 6;
         feedback = 'Perlu ditingkatkan. Pastikan memahami konversi antar basis 10, 2, dan 16.';
       }
     } else if (q.id === 2) {

@@ -151,19 +151,18 @@ export const MULTIPLE_CHOICE_QUESTIONS: MultipleChoiceQuestion[] = [
 export const ESSAY_QUESTIONS: EssayQuestion[] = [
   {
     id: 1,
-    question: 'Kamu akan mengonversi beberapa angka ke berbagai sistem bilangan. Salin dan lengkapi tabel berikut sesuai dengan bilangannya:\n• Desimal 15 -> Biner: ...? Heksadesimal: ...?\n• Desimal 35 -> Biner: ...? Heksadesimal: 23\n• Desimal ...? -> Biner: ...? Heksadesimal: 4D\n• Desimal ...? -> Biner: 11010 -> Heksadesimal: ...?',
+    question: 'Kamu akan mengonversi beberapa angka ke berbagai sistem bilangan. Salin dan lengkapi tabel berikut sesuai dengan bilangannya:\n• Desimal 15 -> Biner: ...? Heksadesimal: ...?\n• Desimal 35 -> Biner: ...? Heksadesimal: 23\n• Desimal ...? -> Biner: ...? Heksadesimal: 4D',
     tableTemplate: {
       headers: ['Desimal', 'Biner', 'Heksadesimal'],
       rows: [
         ['15', '?', '?'],
         ['35', '?', '23'],
         ['?', '?', '4D'],
-        ['?', '11010', '?'],
       ],
     },
     keyConcept: 'Konversi antar sistem bilangan (Desimal, Biner, Heksadesimal)',
-    idealAnswer: '1. Desimal 15 = Biner 1111, Heksadesimal F.\n2. Desimal 35 = Biner 100011, Heksadesimal 23.\n3. Heksadesimal 4D = Desimal 77 (4×16 + 13), Biner 1001101.\n4. Biner 11010 = Desimal 26, Heksadesimal 1A.',
-    keywords: ['1111', 'F', '100011', '77', '1001101', '26', '1A'],
+    idealAnswer: '1. Desimal 15 = Biner 1111, Heksadesimal F.\n2. Desimal 35 = Biner 100011, Heksadesimal 23.\n3. Heksadesimal 4D = Desimal 77 (4×16 + 13), Biner 1001101.',
+    keywords: ['1111', 'F', '100011', '77', '1001101'],
     maxScore: 20,
   },
   {
@@ -224,7 +223,7 @@ export const INITIAL_SUBMISSIONS: StudentSubmission[] = [
       10: 'C',
     },
     essayAnswers: {
-      1: 'Tabel konversi:\n15 desimal = 1111 biner, F heksa\n35 desimal = 100011 biner, 23 heksa\n77 desimal = 1001101 biner, 4D heksa\n26 desimal = 11010 biner, 1A heksa',
+      1: 'Tabel konversi:\n15 desimal = 1111 biner, F heksa\n35 desimal = 100011 biner, 23 heksa\n77 desimal = 1001101 biner, 4D heksa',
       2: 'Langkah konversi 100 ke biner dengan modulo 2:\n100 : 2 = 50 sisa 0\n50 : 2 = 25 sisa 0\n25 : 2 = 12 sisa 1\n12 : 2 = 6 sisa 0\n6 : 2 = 3 sisa 0\n3 : 2 = 1 sisa 1\n1 : 2 = 0 sisa 1\nHasil sisa dibaca dari bawah ke atas sehingga diperoleh 1100100 (basis 2).',
       3: 'Komputer memakai biner karena sirkuit dan transistor elektronika hanya punya dua kondisi tegangan: ON (1) dan OFF (0). Ini jauh lebih andal, tidak gampang error atau noise dibanding membedakan 10 tingkat tegangan desimal.',
       4: 'Operasi POP hanya di elemen paling atas karena stack mengikuti prinsip LIFO (Last In First Out). Hanya elemen paling atas (Top) yang bisa diakses langsung agar integritas tumpukan terjaga.',
@@ -250,11 +249,11 @@ export const INITIAL_SUBMISSIONS: StudentSubmission[] = [
     essayEvaluations: [
       {
         questionId: 1,
-        studentAnswer: 'Tabel konversi:\n15 desimal = 1111 biner, F heksa\n35 desimal = 100011 biner, 23 heksa\n77 desimal = 1001101 biner, 4D heksa\n26 desimal = 11010 biner, 1A heksa',
+        studentAnswer: 'Tabel konversi:\n15 desimal = 1111 biner, F heksa\n35 desimal = 100011 biner, 23 heksa\n77 desimal = 1001101 biner, 4D heksa',
         score: 20,
         maxScore: 20,
         feedback: 'Sangat sempurna! Semua nilai konversi desimal, biner, dan heksadesimal terisi dengan benar dan akurat.',
-        matchedKeywords: ['1111', 'F', '100011', '77', '1001101', '26', '1A'],
+        matchedKeywords: ['1111', 'F', '100011', '77', '1001101'],
       },
       {
         questionId: 2,
@@ -313,7 +312,7 @@ export const INITIAL_SUBMISSIONS: StudentSubmission[] = [
       10: 'C',
     },
     essayAnswers: {
-      1: '15 = 1111 biner, F heksa. 35 = 100011 biner. 4D heksa = 77 desimal, 1001101 biner. 11010 biner = 26 desimal, 1A heksa.',
+      1: '15 = 1111 biner, F heksa. 35 = 100011 biner. 4D heksa = 77 desimal, 1001101 biner.',
       2: 'Membagi 100 dengan 2 sampai habis dan mencatat sisa bagi modulo dari setiap pembagian. Terakhir dibaca terbalik didapat 1100100.',
       3: 'Karena komputer menggunakan listrik digital on dan off (0 dan 1).',
       4: 'Karena aturan tumpukan Last In First Out, yang masuk paling akhir berada di atas dan harus keluar duluan.',
@@ -328,11 +327,11 @@ export const INITIAL_SUBMISSIONS: StudentSubmission[] = [
     essayEvaluations: [
       {
         questionId: 1,
-        studentAnswer: '15 = 1111 biner, F heksa. 35 = 100011 biner. 4D heksa = 77 desimal, 1001101 biner. 11010 biner = 26 desimal, 1A heksa.',
+        studentAnswer: '15 = 1111 biner, F heksa. 35 = 100011 biner. 4D heksa = 77 desimal, 1001101 biner.',
         score: 20,
         maxScore: 20,
         feedback: 'Jawaban akurat dan lengkap.',
-        matchedKeywords: ['1111', 'F', '100011', '77', '1001101', '26', '1A'],
+        matchedKeywords: ['1111', 'F', '100011', '77', '1001101'],
       },
       {
         questionId: 2,
@@ -391,7 +390,7 @@ export const INITIAL_SUBMISSIONS: StudentSubmission[] = [
       10: 'C',
     },
     essayAnswers: {
-      1: '15 -> biner 1111, heksa F. 35 -> biner 100011. Desimal 77 -> heksa 4D. Biner 11010 -> desimal 26, heksa 1A.',
+      1: '15 -> biner 1111, heksa F. 35 -> biner 100011. Desimal 77 -> heksa 4D.',
       2: '100 dibagi 2 dapat 50 sisa 0, 50 dibagi 2 sisa 0, 25 dibagi 2 sisa 1, 12 sisa 0, 6 sisa 0, 3 sisa 1, 1 sisa 1. Hasil 1100100.',
       3: 'Karena biner lebih gampang dipakai mesin untuk membaca arus listrik mati dan hidup.',
       4: 'Karena tumpukan hanya bisa diambil dari paling atas, seperti menumpuk piring.',
@@ -412,11 +411,11 @@ export const INITIAL_SUBMISSIONS: StudentSubmission[] = [
     essayEvaluations: [
       {
         questionId: 1,
-        studentAnswer: '15 -> biner 1111, heksa F. 35 -> biner 100011. Desimal 77 -> heksa 4D. Biner 11010 -> desimal 26, heksa 1A.',
+        studentAnswer: '15 -> biner 1111, heksa F. 35 -> biner 100011. Desimal 77 -> heksa 4D.',
         score: 18,
         maxScore: 20,
         feedback: 'Pengisian tabel tepat.',
-        matchedKeywords: ['1111', 'F', '100011', '77', '26', '1A'],
+        matchedKeywords: ['1111', 'F', '100011', '77'],
       },
       {
         questionId: 2,
