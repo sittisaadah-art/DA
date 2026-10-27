@@ -1,0 +1,6 @@
+{
+  "name": "CBT Informatika SMP Ar Rohmah IIBS",
+  "description": "Aplikasi Daily Asesmen Informatika Kelas VIII Bab 2 Berpikir Komputasional SMP Ar Rohmah IIBS dengan sistem pengawasan anti-kecurangan real-time, penilaian otomatis, dan rekapitulasi nilai guru.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
